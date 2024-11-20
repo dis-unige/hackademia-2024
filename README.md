@@ -1,8 +1,8 @@
 # Hackademia 2024 - UNIGE
 22-23 november 2024 à Battelle, Genève - https://www.unige.ch/hackademia/
 
-## Challenge **"Exploiter les techniques d’Intelligence Artificielle pour développer le nouvel outil de recherche de la Bibliothèque"**
-
+## Informations sur le projet proposé
+  * Titre : **Exploiter les techniques d’Intelligence Artificielle pour développer le nouvel outil de recherche de la Bibliothèque**
   * Porteurs du projet : **Pablo Iriarte** (pablo.iriarte@unige.ch) & Nicolas Prongué (nicolas.prongue@unige.ch), Division de l'Information Scientifique (DIS), UNIGE
   * Participants :
     * Abdoulaye Kadiatou Diallo
