@@ -10,7 +10,13 @@ Pour tester Llamas2 7B sans installation 😎: [https://www.llama2.space/de](htt
 
 
 ## Exemples de prompts
-1. 
+    template = """
+    Question: The person asks for "{question}" and we want to transform in a boolean query ready to be sent to a bibliographic database
+    
+    Answer:
+    """
+
+    
 
 
 ## API swisscovery: doc booléen
