@@ -1,5 +1,7 @@
 # Notes
 
+Pour tester Llamas2 7B sans installation 😎: [https://www.llama2.space/de](https://www.llama2.space/de)
+
 ## Règles booléen swisscovery
 
 
