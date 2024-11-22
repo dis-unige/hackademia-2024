@@ -27,3 +27,5 @@ Partout: `query=any,contains,transition,`
 Auteur: `query=creator,contains,michel mayor`
 Année départ: `pfilter=dr_s,exact,20000101`
 Année fin: `pfilter=dr_e,exact,20101231`
+
+The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start date (variable START_DATE), the end date (variable END_DATE)(be aware that date can be START_DATE-END_DATE, so try to cut them in two variables),  and the subjects (variable SUBJECT). Recherche les publications de Michel Mayor sur les transitions, datant de 2000-2010
