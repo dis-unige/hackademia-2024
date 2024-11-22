@@ -19,6 +19,15 @@ Pour tester Llamas2 7B sans installation 😎: [https://www.llama2.space/de](htt
 * Transforme la phrase suivante en requête booléenne: "requête en langage naturel 1."
 * The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). If no data is identified, the variable must be empty. Output only a JSON file as result.
 
+`The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). For SUBJECT, create a boolean request with synomyms in French and English. If no data is identified, the variable must be an empty string. Output only a JSON file as result. An exemple of the output is given below:
+{
+"AUTHOR": "Laurent Gaudé",
+"START_DATE": "2008",
+"END_DATE": null,
+"SUBJECT": "(suisse OR switzerland OR swiss) AND (finance OR financial OR économique OR economic)"
+}
+`
+
 
 ## API swisscovery: doc booléen
 
