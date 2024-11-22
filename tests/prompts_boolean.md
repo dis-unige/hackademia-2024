@@ -13,4 +13,13 @@
 
 ## Exemples de prompts
 1. Transforme la phrase suivante en requête booléenne: "requête en langage naturel 1."
-2. 
+
+
+## API swisscovery: doc booléen
+
+?query=creator,contains,michel mayor,AND&query=any,contains,transition,AND&pfilter=dr_s,exact,20000101,AND&pfilter=dr_e,exact,20101231,AND&tab=41SLSP_UGE_MyInst_CI&search_scope=MyInst_and_CI&vid=41SLSP_UGE:VU1&mode=advanced&offset=0
+
+Partout: `query=any,contains,transition,`
+Auteur: `query=creator,contains,michel mayor`
+Année départ: `pfilter=dr_s,exact,20000101`
+Année fin: `pfilter=dr_e,exact,20101231`
