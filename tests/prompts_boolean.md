@@ -16,17 +16,53 @@ Pour tester Llamas2 7B sans installation 😎: [https://www.llama2.space/de](htt
 
 ## Exemples de prompts
 
-* Transforme la phrase suivante en requête booléenne: "requête en langage naturel 1."
-* The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). If no data is identified, the variable must be empty. Output only a JSON file as result.
+1:
 
-`The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). For SUBJECT, create a boolean request with synomyms in French and English. If no data is identified, the variable must be an empty string. Output only a JSON file as result. An exemple of the output is given below:
+```json
+The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). For SUBJECT, create a boolean request with synomyms in French and English. If no data is identified, the variable is null. Your response must follow this JSON format:
 {
 "AUTHOR": "Laurent Gaudé",
 "START_DATE": "2008",
 "END_DATE": null,
 "SUBJECT": "(suisse OR switzerland OR swiss) AND (finance OR financial OR économique OR economic)"
 }
-`
+```
+
+2:
+
+```json
+The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). For SUBJECT, create a boolean request with synomyms in French and English. If no data is identified, the variable must be an empty string. Output only a JSON file as result. An exemple of the output is given below:
+{
+"AUTHOR": "Laurent Gaudé",
+"START_DATE": "2008",
+"END_DATE": null,
+"SUBJECT": "(suisse OR switzerland OR swiss) AND (finance OR financial OR économique OR economic)"
+}
+```
+
+## Exemples d'input depuis l'IA pour traitement python
+
+Mayor:
+
+```json
+{
+"AUTHOR": "Michel Mayor",
+"START_DATE": "2000",
+"END_DATE": "2010",
+"SUBJECT": "(transitions OR transition) AND (finance OR financial OR économique OR economic)"
+}
+```
+
+Gaudé:
+
+```json
+{
+"AUTHOR": "Laurent Gaudé",
+"START_DATE": "2008",
+"END_DATE": null,
+"SUBJECT": "(suisse OR switzerland OR swiss) AND (egalite OR equality OR gender OR women) AND (1950 OR "ancien regime")"
+}
+```
 
 
 ## API swisscovery: doc booléen
