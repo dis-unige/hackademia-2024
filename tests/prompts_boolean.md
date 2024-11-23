@@ -16,6 +16,8 @@ Pour tester Llamas2 7B sans installation 😎: [https://www.llama2.space/de](htt
 
 ## Exemples de prompts
 
+De plus efficace au moins efficace
+
 > The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (json key "author"), the start publication year (json key "start_date"), the end publication year (json key "end_date") and the subjects (json key "subject"). For "subject", create a boolean request with synomyms in French and English. If no data is identified, the variable is null. Your response is a JSON file without comments.
 > 
 > I'm gonna provide you two examples with the raw search query and the expected json structure.
