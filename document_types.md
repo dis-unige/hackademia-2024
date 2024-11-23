@@ -19,7 +19,7 @@ Type de documents
 ]
 ```
 
-Format du filtre d'URL swisscovery: `&pfilter=rtype,exact,books,AND
+Format du filtre d'URL swisscovery: `&pfilter=rtype,exact,books,AND`
 
 Synonymes
 
@@ -41,7 +41,7 @@ Synonymes
         "manuel",
         "brochure",
         "roman",
-		"novel",
+	"novel",
         "textbook",
         "handbook",
         "bouquin"
@@ -52,19 +52,19 @@ Synonymes
     ],
     "datasets": [
         "ensemble de donnée",
-		"jeu de donnée",
+	"jeu de donnée",
         "dataset"
     ],
     "dissertations": [
         "thèse",
         "thesis",
         "memoire",
-		"dissertation"
+        "dissertation"
     ],
     "images": [
         "image",
         "carte postale",
-		"postcard"
+	"postcard"
     ],
     "journals": [
         "périodique",
@@ -73,20 +73,20 @@ Synonymes
         "journal",
         "periodical",
         "gazette",
-		"newspaper"
+	"newspaper"
     ],
     "manuscripts": [
         "manuscrit",
         "manuscript",
         "parchemin",
-		"parchment",
+	"parchment",
         "grimoire",
         "papyrus"
     ],
     "maps": [
         "carte",
         "map",
-		"atlas"
+	"atlas"
     ],
     "scores": [
         "partition",
@@ -97,7 +97,7 @@ Synonymes
         "film",
         "long-metrage",
         "court-metrage",
-		"video",
+	"video",
         "vidéo",
         "movie"
     ]
