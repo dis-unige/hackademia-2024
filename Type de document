@@ -1,20 +1,106 @@
-Création d'un sac de mots
-Type de documents:
-["Livre", "Périodique", "Article", "Image", "Audio", "Film", "Thèse", "Carte", "Ensemble de donnée", "Base de données", "Manuscrit", "Partition", "Autre"]
+# Création d'un sac de mots
 
+Type de documents
+
+```json
+[
+    "books",
+    "journals",
+    "articles",
+    "images",
+    "audios",
+    "videos",
+    "dissertations",
+    "maps",
+    "datasets",
+    "databases",
+    "manuscripts",
+    "scores"
+]
+```
+
+Format du filtre d'URL swisscovery: `&pfilter=rtype,exact,books,AND
+
+Synonymes
+
+```json
 {
-"Livre":["livre","book", "Book", "ouvrage"," volume", "manuel", "recueil","fascicule", "brochure", "Roman", "texbook","manual", "bouquin" ],
-"Périodique":["Périodique", "périodique", "revue", "magazine", "journal", "periodical", "gazette", "newsletter"],
-"Article":["Article", "article", "chronique", "papier", "rubrique", "report", "post" ],
-"Image": ["Image", "image", "illustration", "representation","photo", "photographie", "tableau", "peinture", "dessin", "croquis", "gravure", "figure"," picture" ],
-"Audio":["Audio", "audio", "son", "enregistrement sonore", "musique", "chanson", "sound", "audio track",],
-"Film":["Film", "film", "long-metrage", "cout-metrage", "fiction", "comedie", "documentaire", "pellicule", "video", "vidéo","movie", "documentary"],
-"Thèse":["Thèse", "thèse", "thesis", "doctorat", "PhD", "memoire", "research"],
-"Carte":["Carte", "carte","plan","Map" ],
-"Ensemble de donnée":["Ensemble de donnée", "ensemble de donnée", "dataset", "collection", "registre", "register", "archive"],
-"Base de données":["Base de données", "base de données", "table", " database"],
-"Manuscrit":["Manuscrit", "manuscrit", "parchemin", "grimoire", "papyrus", "scroll"],
-"Partition":["Partition", "partition", "score", "sheeet Music"],
-"Autre":["Autre", "autre", "divers", "other", "different", "another", "else", "alternative"]
-
+    "articles": [
+        "article",
+        "chronique"
+    ],
+    "audios": [
+        "audio",
+        "enregistrement sonore",
+        "audio track"
+    ],
+    "books": [
+        "livre",
+        "book",
+        "ouvrage",
+        "manuel",
+        "brochure",
+        "roman",
+		"novel",
+        "textbook",
+        "handbook",
+        "bouquin"
+    ],
+    "databases": [
+        "base de données",
+        "database"
+    ],
+    "datasets": [
+        "ensemble de donnée",
+		"jeu de donnée",
+        "dataset"
+    ],
+    "dissertations": [
+        "thèse",
+        "thesis",
+        "memoire",
+		"dissertation"
+    ],
+    "images": [
+        "image",
+        "carte postale",
+		"postcard"
+    ],
+    "journals": [
+        "périodique",
+        "revue",
+        "magazine",
+        "journal",
+        "periodical",
+        "gazette",
+		"newspaper"
+    ],
+    "manuscripts": [
+        "manuscrit",
+        "manuscript",
+        "parchemin",
+		"parchment",
+        "grimoire",
+        "papyrus"
+    ],
+    "maps": [
+        "carte",
+        "map",
+		"atlas"
+    ],
+    "scores": [
+        "partition",
+        "score",
+        "sheet music"
+    ],
+    "videos": [
+        "film",
+        "long-metrage",
+        "court-metrage",
+		"video",
+        "vidéo",
+        "movie"
+    ]
 }
+```
+
