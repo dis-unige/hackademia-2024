@@ -3,12 +3,12 @@ Type de documents:
 ["Livre", "Périodique", "Article", "Image", "Audio", "Film", "Thèse", "Carte", "Ensemble de donnée", "Base de données", "Manuscrit", "Partition", "Autre"]
 
 {
-"Livre":["livre", "livres", "book", "Books", "ouvrage"," volume", "manuel", "recueil","fascicule", "brochure", "Roman", "texbook","manual" ],
-"Périodique":["Périodiques", "périodique", "revue", "magazine", "journal", "periodical", "gazette", "newsletter"],
+"Livre":["livre","book", "Book", "ouvrage"," volume", "manuel", "recueil","fascicule", "brochure", "Roman", "texbook","manual", "bouquin" ],
+"Périodique":["Périodique", "périodique", "revue", "magazine", "journal", "periodical", "gazette", "newsletter"],
 "Article":["Article", "article", "chronique", "papier", "rubrique", "report", "post" ],
 "Image": ["Image", "image", "illustration", "representation","photo", "photographie", "tableau", "peinture", "dessin", "croquis", "gravure", "figure"," picture" ],
 "Audio":["Audio", "audio", "son", "enregistrement sonore", "musique", "chanson", "sound", "audio track",],
-"Film":["Film", "film", "long-metrage", "cout-metrage", "fiction", "comedie", "documentaire", "pellicule", "video", "movie", "documentary"],
+"Film":["Film", "film", "long-metrage", "cout-metrage", "fiction", "comedie", "documentaire", "pellicule", "video", "vidéo","movie", "documentary"],
 "Thèse":["Thèse", "thèse", "thesis", "doctorat", "PhD", "memoire", "research"],
 "Carte":["Carte", "carte","plan","Map" ],
 "Ensemble de donnée":["Ensemble de donnée", "ensemble de donnée", "dataset", "collection", "registre", "register", "archive"],
