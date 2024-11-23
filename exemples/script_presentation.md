@@ -7,13 +7,17 @@ Personnages
 * llama: IA LLama2 7B
 * swisscovery
 
-[humain] Question conceptuelle de base (à définir)
+[humain] Salut la Bibliothèque. J'aimerais savoir ce qu'est le boson de Higgs.
 
-[interface] Salut petit humain. Ok, alors demandons à Llama ce qu'il peut faire. Llama, peux-tu me donner une petite intro du sujet et une équation de recherche?
+[interface] Salut petit humain. Ok, alors demandons à Llama ce qu'il peut faire. Llama, peux-tu me donner une petite explication concise sur ce sujet? Crée aussi une équation de recherche pour notre ami swisscovery. Mais écoute bien: d'abord l'explicaiton, et ensuite la recherche.
 
 *(LLama lit l'intro à haute voir pour l'humain)*
 
-[llama] [Intro]
+[llama] Explication: Le boson de Higgs est une particule fondamentale du modèle standard de physique des particules, qui décrit le comportement des particules subatomiques. Elle a été proposée pour la première fois par le physicien Peter Higgs et d’autres dans les années 1960 pour expliquer pourquoi certaines particules ont une masse. Le boson de Higgs a un spin nul, et c'est le quantum du champ de Higgs, un champ qui imprègne tout l'espace et donne de la masse aux particules fondamentales qui interagissent avec lui.
+
+Recherche: Afin de trouver des ressources liées au boson de Higgs...
+
+*(interface l'interrompt)*
 
 [interface] Ok, merci. Bon l'équation de recherche, par la peine de la lire. Je vais juste le reformater pour notre ami swisscovery, sinon il va rien comprendre. Voilà. T'as qqch pour nous swisscovery?
 
