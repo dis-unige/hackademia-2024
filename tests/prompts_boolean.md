@@ -16,29 +16,75 @@ Pour tester Llamas2 7B sans installation 😎: [https://www.llama2.space/de](htt
 
 ## Exemples de prompts
 
-1:
+De plus efficace au moins efficace
 
-```json
-The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). For SUBJECT, create a boolean request with synomyms in French and English. If no data is identified, the variable is null. Your response must follow this JSON format:
-{
-"AUTHOR": "Laurent Gaudé",
-"START_DATE": "2008",
-"END_DATE": null,
-"SUBJECT": "(suisse OR switzerland OR swiss) AND (finance OR financial OR économique OR economic)"
-}
-```
+> The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (json key "author"), the start publication year (json key "start_date"), the end publication year (json key "end_date") and the subjects (json key "subject"). For "subject", create a boolean request with synomyms in French and English. If no data is identified, the variable is null. Your response is a JSON file without comments.
+> 
+> I'm gonna provide you two examples with the raw search query and the expected json structure.
+> 
+> example1.raw_search_query = "Recherche les publications de Michel Mayor sur les transitions, datant de 2000-2010"
+> 
+> example1.expected_json_structure = """{{ "author": "Michel Mayor", "start_date": "2000", "end_date": "2010", "subject": "(transitions OR transition) AND (sciences OR scientific OR technology OR technologie)" }}"""
+> 
+> example2.raw_search_query = "Je cherche un livre de Harlan Coben publié en 2009 à propos de sang"
+> 
+> example2.expected_json_structure = """{{ "author": "Harlan Coben", "start_date": "2009", "end_date": null, "subject": "sang OR blood" }}"""
+> 
+> example3.raw_search_query = "Des articles scientifiques sur le COVID-19 en bibliothèque académique publiés après 2020"
+> 
+> example3.expected_json_structure = """{{ "author": null, "start_date": "2020", "end_date": null, "subject": "(COVID-19 OR coronavirus OR pandémie OR pandemic) AND (bibliothèque académique OR bibliothèques universitaires OR academic library OR university libraries)" }}"""
+> 
+> Now apply these rules to convert the following raw search query: {search}
 
-2:
+---
 
-```json
-The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). For SUBJECT, create a boolean request with synomyms in French and English. If no data is identified, the variable must be an empty string. Output only a JSON file as result. An exemple of the output is given below:
-{
-"AUTHOR": "Laurent Gaudé",
-"START_DATE": "2008",
-"END_DATE": null,
-"SUBJECT": "(suisse OR switzerland OR swiss) AND (finance OR financial OR économique OR economic)"
-}
-```
+> You are the best model to map raw texts to desired Json format. You are tasked with converting a given search query into a JSON object with the specified structure.
+> 
+> Please follow these guidelines:
+> 
+> 1. If the provided text is empty or does not contain any relevant information, return the JSON structure with all values as empty strings.
+> 
+> 2. Extract relevant information from the provided text and map it to the corresponding keys in the JSON structure.
+> 
+> 3. For "subject", create a boolean request with synomyms in French and English.
+> 
+> 4. If a particular key's value is not found in the given text, leave the value as an empty string.
+> 
+> 5. Do not include any additional information or formatting beyond the requested JSON object.
+> 
+> I'm gonna provide you two examples with the raw search query and the expected json structure.
+> 
+> example1.raw_search_query = "Je cherche un livre de Harlan Coben publié en 2009 à propos de sang"
+> example1.expected_json_structure = """{{
+>   "author": "Harlan Coben",
+>   "start_date": "2009",
+>   "end_date": null,
+>   "subject": "sang OR blood"
+> }}"""
+> 
+> example2.raw_search_query = "Recherche les publications de Michel Mayor sur les transitions, datant de 2000-2010"
+> example2.expected_json_structure = """{{
+>   "author": "Michel Mayor",
+>   "start_date": "2000",
+>   "end_date": "2010",
+>   "subject": "(transitions OR transition) AND (sciences OR scientific OR technology OR technologie)"
+> }}"""
+> 
+> Now apply these rules to convert the following raw search query: {search}
+
+---
+
+> The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). For SUBJECT, create a boolean request with synomyms in French and English. If no data is identified, the variable is null. Your response must follow this JSON format:
+
+---
+
+> The following natural language phrase is a search request in the university library catalogue. If applicable extract the authors (variable AUTHOR), the start publication year (variable START_DATE), the end publication year (variable END_DATE) and the subjects (variable SUBJECT). For SUBJECT, create a boolean request with synomyms in French and English. If no data is identified, the variable is null. Your response must follow this JSON format:
+> {
+> "AUTHOR": "Laurent Gaudé",
+> "START_DATE": "2008",
+> "END_DATE": null,
+> "SUBJECT": "(suisse OR switzerland OR swiss) AND (finance OR financial OR économique OR economic)"
+> }
 
 ## Exemples d'input depuis l'IA pour traitement python
 
