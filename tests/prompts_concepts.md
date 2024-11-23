@@ -8,7 +8,7 @@ Doc pour un prompt fait pour obtenir du JSON dans la réponse : https://medium.c
 
 
 ## Exemples de requêtes en langage naturel
-1. J'aimerais savoir qu'est-ce le bosson de Higgs
+1. J'aimerais savoir ce qu'est le bosson de Higgs
 
 
 ## Exemples de prompts
