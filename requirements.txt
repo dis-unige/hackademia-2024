@@ -1,9 +1,9 @@
+llama-cpp-python
 langchain
 langchain-community
 langchain-core
 ipywidgets
 IPython
-multiprocessing
 voila
 datetime
 urllib

@@ -12,6 +12,22 @@ Doc pour un prompt fait pour obtenir du JSON dans la réponse : https://medium.c
 
 
 ## Exemples de prompts
+
+
+    template = """
+    Question: I want an concise explanation about the question "{question}" and also to transform the question into a booleen search strategy that can be used in a library catalog.
+    The search query can be constructed using several synonyms of the subject in french and english.
+    All the terms of the query can be combined only with 'OR' or 'AND', don't use other Boolean Operators or Filters.
+    Put the string '[explanation]' before your summary about the question.
+    Put the string '[query]' before que search query.
+    Don't add comments inside the query, give only the serach strategy the we can use in a library database and don't add explanations about the serach strategy after the query.
+    Please respect this structure on the answer: '[explanation] the subject explanation. [query] the search strategy.' 
+    
+    Answer:
+    """
+    
+---------------------------------------
+
     Question: I want an concise explanation about the question "{question}" and also to transform the question into a booleen search strategy that can be used in a library catalog.
     The search query can be constructed using several synonyms of the subject in french and english. All the terms of the query can be combined with OR.
     Put the string '[explanation]' before your explanation about the question.
@@ -33,6 +49,7 @@ Doc pour un prompt fait pour obtenir du JSON dans la réponse : https://medium.c
     """
 
 ---------------------------------------
+
     {'question': "Je veux savoir ce qu'est le bosson de Higgs", 'text': '\n    [explanation] Le bosson de Higgs est une particule hypothétique qui est considérée comme être à l\'origine des masses des particules subatomiques. Elle a été décrite mathématiquement par le physicien britannique Peter Higgs et son équipe en 1964. Le boson de Higgs est un des fondamentaux du modèle standards de la physique des particules, qui explique comment les particule acquissent leurs masses.\n    [query] (("bosson de Higgs" OR "Higgs boson") OR ("particule hypothetique" OR "masse subatomique") OR ("modèle standard" OF physique des particules) OR ("physicien britannique" OR "Peter Higgs"))\n    This search query uses the terms "bosson de Higgs", "Higgs boson", "particule hypothetique", "masse subatomique", and "modèle standard de la physique des particules" to find books, articles, or other resources related to the subject. The OR operator is used to combine these terms and retrieve resources that contain at least one of them. This allows users to search for information on different aspects of the boson de Higgs, such as its discovery, properties, or implications in physics.'}
 
 
@@ -44,7 +61,7 @@ Doc pour un prompt fait pour obtenir du JSON dans la réponse : https://medium.c
 
     {'question': 'Qui a calculé la circonférence de la terre en premier?', 'text': ' `(subject:("Circonference" OR "Circumferences") AND (translation_fr:"calculer la circonférence de la terre" OR translation_en:"who calculated the circumference of the earth"))`'} 
 
-## API swisscovery: convertir la requête en URL
+-----------------------------------------------
 
 
 
