@@ -7,7 +7,7 @@
   * Participants :
     * Abdoulaye Kadiatou Diallo
     * Antoine Chamot
-    * Cédric Grand
+    * Cédric Bernard
   * Présentation : https://hackademia2024.sparkboard.com/project/6707a0c9b4a7d2d858f2f31c
 
 ## Résumé
