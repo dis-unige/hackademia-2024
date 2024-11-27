@@ -4,6 +4,7 @@ langchain-core
 ipywidgets
 IPython
 multiprocessing
+voila
 datetime
 urllib
 json
